@@ -1,0 +1,183 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTRUTURA BÁSICA */
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle, #3f3e3e 0%, #222222 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  margin-top: 0;
+  border: 2px solid #333;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* LISTA DE NAVEGAÇÃO */
+ul {
+  margin-top: 1%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 10px 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ITENS DA LISTA */
+ul > li {
+  transition: all 0.4s ease;
+  padding: 6px 18px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* EFEITO HOVER */
+li:hover {
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px 10px #97B1BF;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* LINKS */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* IMAGENS */
+img {
+  width: 120px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* TÍTULOS */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  margin: 40px 0 10px 5%;
+  line-height: normal;
+  font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFF 36.17%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  margin: 5px 0 10px 5.5%;
+  line-height: normal;
+  font-family: 'Segoe UI Light', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFF 36.17%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- 🔹 RESPONSIVIDADE --- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  ul {
+    gap: 40px;
+    padding: 0 10%;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  h1 {
+    margin-left: 3%;
+  }
+
+  h3 {
+    margin-left: 3.5%;
+  }
+}
+
+/* Tablets e celulares médios (até 768px) */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+    align-items: center;
+  }
+
+  ul > li {
+    width: 80%;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  img {
+    width: 90px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+
+  ul {
+    gap: 15px;
+  }
+
+  ul > li {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}

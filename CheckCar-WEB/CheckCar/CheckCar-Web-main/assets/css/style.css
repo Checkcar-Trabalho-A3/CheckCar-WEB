@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Fundo da página com gradiente radial */
+body {
+    
+    min-height: 100vh;
+  background: radial-gradient(circle, #3f3e3e 0%, #222222 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabeçalho com altura e borda */
+header {
+  height: 200px;
+  
+}
+
+/* Título com gradiente no texto */
+#um {
+  font-size: 4vw;
+  margin: 40px 0 10px 3%;
+  font-style: normal;
+  font-weight: 300; 
+  line-height: normal;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #FFF 36.17%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#dois {
+   
+  color: #FFF;
+  font-size: 1vw;
+  font-weight: 250;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-left: 3%; /* mesmo alinhamento do título */
+  margin-bottom: 20px;
+  
+
+    margin-top: 0%;
+  margin-left: 3%;
+    
+}
+#tres {
+     
+  text-align: center; /* centraliza tudo dentro do header */
+  font-size: 4vw;
+  font-style: normal;
+  font-weight: 300; /* Corrigido: 250 não é um valor suportado para Poppins */
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FFF 36.17%, rgba(255, 255, 255, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+#email, #senha {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  width: 80%; /* ocupa 80% da tela */
+  max-width: 450px; /* mas não passa disso */
+  height: 55px;
+  border-radius: 20px;
+  border: 1px solid rgba(13, 13, 13, 0.67);
+  background: #5A5A5A;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+input[type="submit"]{
+    color: #FFF;
+    background: #5A5A5A;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 11.5%;
+    height: 5vh;
+    margin: 40px 0 10px 3%;
+    margin: 10px 0 10px 38.5%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
+.verificar {
+    width: 300px;    
+    margin: 0 auto;   
+}
+button {
+  color: #FFF;
+    background: radial-gradient(circle, #3f3e3e 0%, #424242 100%);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 11.5%;
+    height: 5vh;
+    margin: 40px 0 10px 3%;
+    margin: 10px 0 10px 0%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  input[type="submit"]{
+    color: #FFF;
+    background: #5A5A5A;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20%;
+    height: 7vh;
+    margin: 10px 0 10px 30%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
+  button {
+  color: #FFF;
+    background: radial-gradient(circle, #3f3e3e 0%, #424242 100%);
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20.5%;
+    height: 7vh;
+    margin: 40px 0 10px 3%;
+    margin: 10px 0 10px 0%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #um, #tres {
+    font-size: 8vw;
+  }
+  #dois {
+    font-size: 3vw;
+    letter-spacing: 2px;
+  }
+  #email, #senha {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #um, #tres {
+    font-size: 10vw;
+  }
+  #dois {
+    font-size: 4vw;
+  }
+  #email, #senha {
+    width: 90%;
+    height: 45px;
+  }
+}
